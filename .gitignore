@@ -6,11 +6,11 @@
 hs_err_pid*
 
 ## Robovm
-/ios/robovm-build/
+/RingWorld/ios/robovm-build/
 
 ## GWT
-/html/war/
-/html/gwt-unitCache/
+/RingWorld/html/war/
+/RingWorld/html/gwt-unitCache/
 .apt_generated/
 .gwt/
 gwt-unitCache/
@@ -18,17 +18,17 @@ www-test/
 .gwt-tmp/
 
 ## Android Studio and Intellij and Android in general
-/android/libs/armeabi/
-/android/libs/armeabi-v7a/
-/android/libs/arm64-v8a/
-/android/libs/x86/
-/android/libs/x86_64/
-/android/gen/
+/RingWorld/android/libs/armeabi/
+/RingWorld/android/libs/armeabi-v7a/
+/RingWorld/android/libs/arm64-v8a/
+/RingWorld/android/libs/x86/
+/RingWorld/android/libs/x86_64/
+/RingWorld/android/gen/
 .idea/
 *.ipr
 *.iws
 *.iml
-/android/out/
+/RingWorld/android/out/
 com_crashlytics_export_strings.xml
 
 ## Eclipse
@@ -36,12 +36,12 @@ com_crashlytics_export_strings.xml
 .classpath
 .project
 .metadata/
-/android/bin/
-/core/bin/
-/desktop/bin/
-/html/bin/
-/ios/bin/
-/ios-moe/bin/
+/RingWorld/android/bin/
+/RingWorld/core/bin/
+/RingWorld/desktop/bin/
+/RingWorld/html/bin/
+/RingWorld/ios/bin/
+/RingWorld/ios-moe/bin/
 *.tmp
 *.bak
 *.swp
@@ -53,45 +53,45 @@ com_crashlytics_export_strings.xml
 
 ## NetBeans
 
-/nbproject/private/
-/android/nbproject/private/
-/core/nbproject/private/
-/desktop/nbproject/private/
-/html/nbproject/private/
-/ios/nbproject/private/
-/ios-moe/nbproject/private/
+/RingWorld/nbproject/private/
+/RingWorld/android/nbproject/private/
+/RingWorld/core/nbproject/private/
+/RingWorld/desktop/nbproject/private/
+/RingWorld/html/nbproject/private/
+/RingWorld/ios/nbproject/private/
+/RingWorld/ios-moe/nbproject/private/
 
-/build/
-/android/build/
-/core/build/
-/desktop/build/
-/html/build/
-/ios/build/
-/ios-moe/build/
+/RingWorld/build/
+/RingWorld/android/build/
+/RingWorld/core/build/
+/RingWorld/desktop/build/
+/RingWorld/html/build/
+/RingWorld/ios/build/
+/RingWorld/ios-moe/build/
 
-/nbbuild/
-/android/nbbuild/
-/core/nbbuild/
-/desktop/nbbuild/
-/html/nbbuild/
-/ios/nbbuild/
-/ios-moe/nbbuild/
+/RingWorld/nbbuild/
+/RingWorld/android/nbbuild/
+/RingWorld/core/nbbuild/
+/RingWorld/desktop/nbbuild/
+/RingWorld/html/nbbuild/
+/RingWorld/ios/nbbuild/
+/RingWorld/ios-moe/nbbuild/
 
-/dist/
-/android/dist/
-/core/dist/
-/desktop/dist/
-/html/dist/
-/ios/dist/
-/ios-moe/dist/
+/RingWorld/dist/
+/RingWorld/android/dist/
+/RingWorld/core/dist/
+/RingWorld/desktop/dist/
+/RingWorld/html/dist/
+/RingWorld/ios/dist/
+/RingWorld/ios-moe/dist/
 
-/nbdist/
-/android/nbdist/
-/core/nbdist/
-/desktop/nbdist/
-/html/nbdist/
-/ios/nbdist/
-/ios-moe/nbdist/
+/RingWorld/nbdist/
+/RingWorld/android/nbdist/
+/RingWorld/core/nbdist/
+/RingWorld/desktop/nbdist/
+/RingWorld/html/nbdist/
+/RingWorld/ios/nbdist/
+/RingWorld/ios-moe/nbdist/
 
 nbactions.xml
 nb-configuration.xml
@@ -101,13 +101,13 @@ nb-configuration.xml
 /local.properties
 .gradle/
 gradle-app.setting
-/build/
-/android/build/
-/core/build/
-/desktop/build/
-/html/build/
-/ios/build/
-/ios-moe/build/
+/RingWorld/build/
+/RingWorld/android/build/
+/RingWorld/core/build/
+/RingWorld/desktop/build/
+/RingWorld/html/build/
+/RingWorld/ios/build/
+/RingWorld/ios-moe/build/
 
 ## OS Specific
 .DS_Store
