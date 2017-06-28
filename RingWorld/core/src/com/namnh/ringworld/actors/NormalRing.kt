@@ -2,13 +2,11 @@ package com.namnh.ringworld.actors
 
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer
-import com.badlogic.gdx.math.MathUtils
 import com.namnh.ringworld.utils.Constants
+import com.namnh.ringworld.utils.randomColor
 
 class NormalRing(renderer: ShapeRenderer) : Ring(renderer) {
-    private var color: Color = Color(MathUtils.random(0.3f, 0.8f), MathUtils.random(0.3f, 0.8f),
-            MathUtils.random(0.3f, 0.8f), 1f)
-
+    private var color: Color = Color().randomColor()
     init {
         radius = 200f
     }

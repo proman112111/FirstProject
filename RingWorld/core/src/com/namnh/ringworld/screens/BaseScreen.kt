@@ -4,7 +4,7 @@ import com.badlogic.gdx.InputAdapter
 import com.badlogic.gdx.Screen
 import com.namnh.ringworld.RingWorld
 
-open class BaseScreen(game: RingWorld) : InputAdapter(), Screen {
+open class BaseScreen(val game: RingWorld) : InputAdapter(), Screen {
     override fun hide() {
     }
 

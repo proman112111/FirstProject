@@ -3,11 +3,9 @@ package com.namnh.ringworld.actors
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer
 
 abstract class Ring(val renderer: ShapeRenderer) : GameObject {
-    protected var radius: Float = 0f
-        set
-        get() = radius
+    var radius: Float = 0f
+    var isStopped = false
 
-    protected var isStopped = false
     fun start() {
         isStopped = false
     }

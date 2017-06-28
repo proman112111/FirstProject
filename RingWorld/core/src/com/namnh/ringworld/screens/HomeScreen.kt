@@ -9,16 +9,12 @@ import com.namnh.ringworld.utils.Constants
 
 class HomeScreen(game: RingWorld) : BaseScreen(game) {
     val TAG = "HomeScreen"
-    private var viewport: Viewport
+    private var viewport: Viewport = ExtendViewport(Constants.GAME_WIDTH, Constants.GAME_HEIGHT)
     private val renderer = ShapeRenderer()
     init {
-        viewport = ExtendViewport(Constants.GAME_WIDTH, Constants.GAME_HEIGHT)
 
         // handle touch event
         Gdx.input.inputProcessor = this
         Gdx.input.isCatchBackKey = true
-
-
-
     }
 }

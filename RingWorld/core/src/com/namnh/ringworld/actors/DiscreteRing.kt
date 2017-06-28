@@ -6,13 +6,9 @@ import com.badlogic.gdx.math.MathUtils
 import com.badlogic.gdx.scenes.scene2d.actions.ColorAction
 import com.namnh.ringworld.utils.Constants
 
-class DiscreteRing(renderer: ShapeRenderer, val mode: Int) : Ring(renderer) {
-    private var arcNum = 0
-        get() = arcNum
-
-    private var rotation = 0f
-        get() = rotation
-
+class DiscreteRing(renderer: ShapeRenderer, private val gameMode: Int) : Ring(renderer) {
+    var arcNum = 0
+    var rotation = 0f
     private var rotateSpeed = 0
     private var ringColor: Color = Color.WHITE
     private var colorAction: ColorAction = ColorAction()
@@ -26,7 +22,7 @@ class DiscreteRing(renderer: ShapeRenderer, val mode: Int) : Ring(renderer) {
     }
 
     private fun initRing() {
-        when (mode) {
+        when (gameMode) {
             Constants.EASY_MODE -> {
                 rotateSpeed = 40
                 arcNum = MathUtils.random(2, 5)
