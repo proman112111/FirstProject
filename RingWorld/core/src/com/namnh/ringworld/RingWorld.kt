@@ -1,38 +1,38 @@
 package com.namnh.ringworld
 
 import com.badlogic.gdx.Game
-import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.audio.Music
-import com.namnh.ringworld.screens.GameScreen
 import com.namnh.ringworld.screens.HomeScreen
+import com.namnh.ringworld.screens.PlayScreen
 import com.namnh.ringworld.utils.Constants
 
-class RingWorld(private val gameHelper: GameHelper) : Game() {
+class RingWorld(private val platformHelper: GameHelper) : Game() {
 
-    private var gameScreen: GameScreen? = null
+    private var playScreen: PlayScreen? = null
     private lateinit var music: Music
     private lateinit var homeScreen: HomeScreen
 
     override fun create() {
-        music = Gdx.audio.newMusic(Gdx.files.internal("sample.mp3"))
+        music = Constants.MUSIC
         music.isLooping = true
         music.volume = 0.8f
         homeScreen = HomeScreen(this)
-        startGame(Constants.EASY_MODE)
-    }
-
-    fun startHomeScreen() {
         setScreen(homeScreen)
     }
 
-    fun startGame(mode: Int) {
-        if (gameScreen == null) {
-            gameScreen = GameScreen(this, mode)
+    fun startPlay(mode: Int) {
+        if (playScreen == null) {
+            playScreen = PlayScreen(this, mode)
         }
-        setScreen(gameScreen)
+        playScreen!!.setPlayMode(mode)
+        setScreen(playScreen)
     }
 
-    fun exitGame() {
-        gameHelper.endGame()
+    fun setHomeScreen() {
+        setScreen(homeScreen)
+    }
+
+    fun exit() {
+        platformHelper.endGame()
     }
 }

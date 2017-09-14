@@ -1,16 +1,26 @@
 package com.namnh.ringworld.actors
 
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer
+abstract class Ring : RenderableObject {
 
-abstract class Ring(val renderer: ShapeRenderer) : GameObject {
     var radius: Float = 0f
-    var isStopped = false
+        set(value) {
+            field = value
+        }
+        get() = field
 
-    fun start() {
-        isStopped = false
-    }
+    var isStopped = false
+        set(value) {
+            field = value
+        }
+        get() = field
+
+    abstract override fun render(delta: Float)
 
     fun stop() {
         isStopped = true
+    }
+
+    fun start() {
+        isStopped = false
     }
 }

@@ -1,5 +1,5 @@
 package com.namnh.ringworld.actors
 
-interface GameObject {
+interface RenderableObject {
     fun render(delta: Float)
 }
